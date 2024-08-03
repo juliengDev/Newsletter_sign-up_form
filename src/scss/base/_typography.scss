@@ -11,10 +11,26 @@
 	•	900 : Black (Heavy)
   
   */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fafafa;
   font-weight: 400;
-  line-height: 1.4;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.ft-heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.ft-body-bold {
+  font-weight: 700;
+}
+.ft-body-small {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
