@@ -5,23 +5,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.centered-div2 {
-  margin: 0 auto;
-  max-width: 50%;
-  text-align: center;
-}
-
-.centered-div3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 21.9rem auto;
 }
 
 .hidden {

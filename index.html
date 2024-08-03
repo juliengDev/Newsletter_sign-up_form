@@ -12,10 +12,35 @@
 </head>
 
 <body>
-  <main>
-    <div id="app"></div>
+  <main class="container">
+    <section class="signup">
+      <div class="signup__body">
+        <h1 class="signup__body__heading">Stay updated!</h1>
+        <div class="signup__body__hero">Join 60,000+ product managers receiving monthly updates on:</div>
+        <ul class="signup__body__list">
+          <li class="signup__body__list_el">Product discovery and building what matters</li>
+          <li class="signup__body__list_el">Measuring to ensure updates are a success</li>
+          <li class="signup__body__list_el">And much more!</li>
+        </ul>
+        <form action="POST" id="form" novalidate class="signup__body__form">
+          <div class="signup__body__form__email">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="email@company.com">
+            <span aria-live="polite" class="email-error"></span>
+          </div>
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="signup-img"></div>
+    </section>
+    <div class="modal__subscription hidden">
+      <i>icon valid</i>
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button>Dismiss message</button>
+    </div>
   </main>
-
   <footer class="attribution">
     Challenge by <a class="attribution__credit" href="https://www.frontendmentor.io?ref=challenge"
       target="_blank">Frontend

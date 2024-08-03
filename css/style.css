@@ -79,7 +79,7 @@ FONT SIZE SYSTEM (px)
   */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: var(--color-pale-navy);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
@@ -108,23 +108,11 @@ body {
   text-align: center;
 }
 
-.centered-div2 {
-  margin: 0 auto;
-  max-width: 50%;
-  text-align: center;
-}
-
-.centered-div3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 21.9rem auto;
 }
 
 .hidden {
@@ -142,11 +130,11 @@ body {
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
-  color: var(--color-wenge-brown);
+  color: var(--color-pure-white);
 }
 .attribution__credit {
   font-weight: 800;
-  color: var(--color-dark-raspberry) !important;
+  color: var(--color-vermellion) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
