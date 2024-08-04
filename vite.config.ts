@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Article_preview_component/",
+  base: "/Newsletter_sign-up_form/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
