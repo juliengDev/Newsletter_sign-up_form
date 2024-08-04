@@ -80,6 +80,7 @@ FONT SIZE SYSTEM (px)
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-pale-navy);
+  color: var(--color-dark-navy);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
@@ -110,6 +111,7 @@ body {
 
 .container {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin: 21.9rem auto;
@@ -126,6 +128,17 @@ body {
   border: 0;
 }
 
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 0;
+  color: var(--color-pure-white);
+  background-color: var(--color-dark-navy);
+  border-radius: 8px;
+}
+
 .attribution {
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
@@ -135,6 +148,84 @@ body {
 .attribution__credit {
   font-weight: 800;
   color: var(--color-vermellion) !important;
+}
+
+.signup {
+  display: flex;
+  max-width: 92.8rem;
+  background-color: var(--color-pure-white);
+  padding: 2.4rem;
+  border-radius: 36px;
+}
+@media only screen and (max-width: 56.25em) {
+  .signup {
+    flex-direction: column;
+  }
+}
+.signup__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9.8rem 6.4rem;
+}
+.signup__body__heading {
+  margin-bottom: 2.4rem;
+}
+.signup__body__hero {
+  margin-bottom: 2.4rem;
+}
+.signup__body__list {
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.signup__body__form {
+  align-self: self-start;
+  width: 100%;
+}
+.signup__body__form__email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+.signup__body__form__email__container {
+  display: flex;
+  justify-content: space-between;
+}
+.signup__body__form__email__container__error {
+  color: var(--color-vermellion);
+}
+.signup__body__form__email__input {
+  border: 1px solid var(--color-grey);
+  border-radius: 8px;
+  margin-bottom: 2.4rem;
+  padding: 1.6rem 0 1.6rem 2.4rem;
+}
+.signup__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.modal__subscription {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.8rem 6.4rem;
+  background-color: var(--color-pure-white);
+  border-radius: 36px;
+}
+.modal__subscription__icon {
+  margin-bottom: 4rem;
+}
+.modal__subscription__heading {
+  margin-bottom: 2.4rem;
+}
+.modal__subscription__txt {
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
