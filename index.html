@@ -17,15 +17,16 @@
         <h1 class="signup__body__heading ft-heading ">Stay updated!</h1>
         <div class="signup__body__hero">Join 60,000+ product managers receiving monthly updates on:</div>
         <ul class="signup__body__list">
-          <li class="signup__body__list_el">Product discovery and building what matters</li>
-          <li class="signup__body__list_el">Measuring to ensure updates are a success</li>
-          <li class="signup__body__list_el">And much more!</li>
+          <li class="signup__body__list__el">Product discovery and building what matters</li>
+          <li class="signup__body__list__el">Measuring to ensure updates are a success</li>
+          <li class="signup__body__list__el">And much more!</li>
         </ul>
         <form action="POST" id="form" novalidate class="signup__body__form">
           <div class="signup__body__form__email">
             <div class="signup__body__form__email__container">
               <label for="email" class=" signup__body__form__email__label ft-body-small">Email address</label>
-              <span aria-live="polite" class="signup__body__form__email__container__error ft-body-small hidden">Valid
+              <span aria-live="polite" id="error"
+                class="signup__body__form__email__container__error ft-body-small hidden">Valid
                 email
                 required</span>
             </div>
@@ -33,7 +34,7 @@
               placeholder="email@company.com">
 
           </div>
-          <button class="btn ft-body-bold">Subscribe to monthly newsletter</button>
+          <button id="subscribe" class="btn ft-body-bold">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <img class="signup__img" src="./assets/images/illustration-sign-up-desktop.svg" />
@@ -56,7 +57,7 @@
       <p class="modal__subscription__txt">A confirmation email has been sent to <span
           class="ft-body-bold">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.</p>
-      <button class="btn">Dismiss message</button>
+      <button id="dismiss" class="btn">Dismiss message</button>
     </div>
   </main>
   <footer class="attribution">

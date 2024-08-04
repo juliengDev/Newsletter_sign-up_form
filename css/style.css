@@ -24,8 +24,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-dark-navy: #242742;
   --color-vermellion: #ff6155;
   --color-gradient1: linear-gradient(#ff6a3a, #ff527b);
-  --shadow1: box-shadow: 0 8px 0 #000;
-  --shadow2: box-shadow: 0 24px 32px 0 rgba(25,25,25, 0.25);
+  --shadow1: 0 8px 0 #000;
+  --shadow2: 0 24px 32px 0 rgba(255, 97, 85, 0.25);
 }
 
 * {
@@ -137,6 +137,15 @@ body {
   color: var(--color-pure-white);
   background-color: var(--color-dark-navy);
   border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  cursor: pointer;
+  background: var(--color-gradient1);
+  color: var(--color-pure-white);
+  border-color: transparent;
+  box-shadow: var(--shadow2);
 }
 
 .attribution {
@@ -150,6 +159,23 @@ body {
   color: var(--color-vermellion) !important;
 }
 
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .signup {
   display: flex;
   max-width: 92.8rem;
@@ -176,8 +202,28 @@ body {
   margin-bottom: 2.4rem;
 }
 .signup__body__list {
+  list-style-type: none;
+  padding-left: 0;
   gap: 1rem;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.signup__body__list__el {
+  position: relative;
+  padding-left: 3rem;
+}
+.signup__body__list__el::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  background: url("/assets/images/icon-list.svg") no-repeat center center;
+  background-size: contain;
 }
 .signup__body__form {
   align-self: self-start;
@@ -200,6 +246,13 @@ body {
   border-radius: 8px;
   margin-bottom: 2.4rem;
   padding: 1.6rem 0 1.6rem 2.4rem;
+  transition: all 0.3s ease;
+}
+.signup__body__form__email__input-error {
+  color: var(--color-vermellion);
+  border: 1px solid var(--color-vermellion);
+  background-color: rgba(255, 97, 85, 0.15);
+  animation: shake 0.3s;
 }
 .signup__img {
   max-width: 100%;

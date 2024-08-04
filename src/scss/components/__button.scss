@@ -7,4 +7,14 @@
   color: var(--color-pure-white);
   background-color: var(--color-dark-navy);
   border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--color-gradient1);
+    color: var(--color-pure-white);
+    border-color: transparent;
+    box-shadow: var(--shadow2);
+  }
 }
