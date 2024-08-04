@@ -34,12 +34,12 @@
               placeholder="email@company.com">
 
           </div>
-          <button id="subscribe" class="btn ft-body-bold">Subscribe to monthly newsletter</button>
+          <button class="btn ft-body-bold">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <img class="signup__img" src="./assets/images/illustration-sign-up-desktop.svg" />
     </section>
-    <div class="modal__subscription ">
+    <div id="modal" class="modal__subscription hidden">
       <svg class="modal__subscription__icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
         viewBox="0 0 64 64">
         <defs>
@@ -54,7 +54,7 @@
         </g>
       </svg>
       <h2 class="modal__subscription__heading ft-heading ">Thanks for subscribing!</h2>
-      <p class="modal__subscription__txt">A confirmation email has been sent to <span
+      <p class="modal__subscription__txt">A confirmation email has been sent to <span id="userEmail"
           class="ft-body-bold">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.</p>
       <button id="dismiss" class="btn">Dismiss message</button>
