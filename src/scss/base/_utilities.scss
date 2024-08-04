@@ -9,10 +9,12 @@
 .container {
   display: flex;
   position: relative;
-
   justify-content: center;
   align-items: center;
   margin: 21.9rem auto 3rem;
+  @include respond(tab-port) {
+    margin: 0 auto 3rem;
+  }
 }
 
 .hidden {

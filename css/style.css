@@ -91,6 +91,11 @@ body {
   font-weight: 700;
   line-height: 100%;
 }
+@media only screen and (max-width: 56.25em) {
+  .ft-heading {
+    font-size: 4rem;
+  }
+}
 
 .ft-body-bold {
   font-weight: 700;
@@ -115,6 +120,11 @@ body {
   justify-content: center;
   align-items: center;
   margin: 21.9rem auto 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    margin: 0 auto 3rem;
+  }
 }
 
 .hidden {
@@ -186,6 +196,9 @@ body {
 @media only screen and (max-width: 56.25em) {
   .signup {
     flex-direction: column;
+    max-width: 37.5rem;
+    padding: 0;
+    border-radius: 0;
   }
 }
 .signup__body {
@@ -194,6 +207,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 9.8rem 6.4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .signup__body {
+    order: 2;
+    padding: 4rem 2.4rem;
+    align-items: flex-start;
+  }
 }
 .signup__body__heading {
   margin-bottom: 2.4rem;
@@ -260,6 +280,12 @@ body {
   object-fit: cover;
   border-radius: 16px;
 }
+@media only screen and (max-width: 56.25em) {
+  .signup__img {
+    order: 1;
+    border-radius: 0;
+  }
+}
 
 .modal__subscription {
   max-width: 50.4rem;
@@ -271,6 +297,12 @@ body {
   padding: 4.8rem 6.4rem;
   background-color: var(--color-pure-white);
   border-radius: 36px;
+}
+@media only screen and (max-width: 56.25em) {
+  .modal__subscription {
+    border-radius: 0;
+    margin-top: 26rem;
+  }
 }
 .modal__subscription__icon {
   margin-bottom: 4rem;

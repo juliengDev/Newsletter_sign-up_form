@@ -22,8 +22,12 @@
   background-color: var(--color-pure-white);
   padding: 2.4rem;
   border-radius: 36px;
+
   @include respond(tab-port) {
     flex-direction: column;
+    max-width: 37.5rem;
+    padding: 0;
+    border-radius: 0;
   }
   &__body {
     display: flex;
@@ -31,6 +35,11 @@
     justify-content: center;
     align-items: center;
     padding: 9.8rem 6.4rem;
+    @include respond(tab-port) {
+      order: 2;
+      padding: 4rem 2.4rem;
+      align-items: flex-start;
+    }
     &__heading {
       margin-bottom: 2.4rem;
     }
@@ -61,9 +70,6 @@
             center;
           background-size: contain;
         }
-        // &:not(:last-child) {
-        //   // padding-bottom: 1.2rem;
-        // }
       }
     }
 
@@ -102,6 +108,10 @@
     height: auto;
     object-fit: cover;
     border-radius: 16px;
+    @include respond(tab-port) {
+      order: 1;
+      border-radius: 0;
+    }
   }
 }
 
@@ -115,6 +125,10 @@
   padding: 4.8rem 6.4rem;
   background-color: var(--color-pure-white);
   border-radius: 36px;
+  @include respond(tab-port) {
+    border-radius: 0;
+    margin-top: 26rem;
+  }
   &__icon {
     margin-bottom: 4rem;
   }

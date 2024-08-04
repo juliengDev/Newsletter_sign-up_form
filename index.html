@@ -32,12 +32,15 @@
             </div>
             <input class="signup__body__form__email__input" type="email" id="email" name="email"
               placeholder="email@company.com">
-
           </div>
           <button class="btn ft-body-bold">Subscribe to monthly newsletter</button>
         </form>
       </div>
-      <img class="signup__img" src="./assets/images/illustration-sign-up-desktop.svg" />
+      <picture>
+        <source media="(max-width: 900px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <source media="(min-width: 901px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img class="signup__img" src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration">
+      </picture>
     </section>
     <div id="modal" class="modal__subscription hidden">
       <svg class="modal__subscription__icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
