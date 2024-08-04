@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/Article_preview_component/assets/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Project Name</title>
+  <script type="module" crossorigin src="/Article_preview_component/assets/index-7Sy8pPeM.js"></script>
+  <link rel="stylesheet" crossorigin href="/Article_preview_component/assets/index.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="signup">
+      <div class="signup__body">
+        <h1 class="signup__body__heading ft-heading ">Stay updated!</h1>
+        <div class="signup__body__hero">Join 60,000+ product managers receiving monthly updates on:</div>
+        <ul class="signup__body__list">
+          <li class="signup__body__list__el">Product discovery and building what matters</li>
+          <li class="signup__body__list__el">Measuring to ensure updates are a success</li>
+          <li class="signup__body__list__el">And much more!</li>
+        </ul>
+        <form action="POST" id="form" novalidate class="signup__body__form">
+          <div class="signup__body__form__email">
+            <div class="signup__body__form__email__container">
+              <label for="email" class=" signup__body__form__email__label ft-body-small">Email address</label>
+              <span aria-live="polite" id="error"
+                class="signup__body__form__email__container__error ft-body-small hidden">Valid
+                email
+                required</span>
+            </div>
+            <input class="signup__body__form__email__input" type="email" id="email" name="email"
+              placeholder="email@company.com">
+          </div>
+          <button class="btn ft-body-bold">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <picture>
+        <source media="(max-width: 900px)" srcset="/Article_preview_component/assets/illustration-sign-up-mobile.svg">
+        <source media="(min-width: 901px)" srcset="/Article_preview_component/assets/illustration-sign-up-desktop.svg">
+        <img class="signup__img" src="/Article_preview_component/assets/illustration-sign-up-desktop.svg" alt="Illustration">
+      </picture>
+    </section>
+    <div id="modal" class="modal__subscription hidden">
+      <svg class="modal__subscription__icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+        viewBox="0 0 64 64">
+        <defs>
+          <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF6A3A" />
+            <stop offset="100%" stop-color="#FF527B" />
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <circle cx="32" cy="32" r="32" fill="url(#a)" />
+          <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+        </g>
+      </svg>
+      <h2 class="modal__subscription__heading ft-heading ">Thanks for subscribing!</h2>
+      <p class="modal__subscription__txt">A confirmation email has been sent to <span id="userEmail"
+          class="ft-body-bold">ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismiss" class="btn">Dismiss message</button>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a class="attribution__credit" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a class="attribution__credit" href="#">Julien Gilbert</a>.
+  </footer>
+</body>
+
+</html>
