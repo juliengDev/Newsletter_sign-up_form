@@ -237,7 +237,7 @@ body {
 }
 .signup__body__list__el {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 3.6rem;
 }
 .signup__body__list__el::before {
   content: "";
@@ -257,6 +257,9 @@ body {
 .signup__body__form__email {
   display: flex;
   flex-direction: column;
+}
+.signup__body__form__email__label {
+  margin-bottom: 0.8rem;
 }
 .signup__body__form__email__container {
   display: flex;
