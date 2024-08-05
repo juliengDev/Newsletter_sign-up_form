@@ -189,8 +189,8 @@ body {
 .signup {
   display: flex;
   max-width: 92.8rem;
+  gap: 6.4rem;
   background-color: var(--color-pure-white);
-  padding: 2.4rem;
   border-radius: 36px;
 }
 @media only screen and (max-width: 56.25em) {
@@ -199,24 +199,29 @@ body {
     max-width: 37.5rem;
     padding: 0;
     border-radius: 0;
+    gap: 4rem;
   }
 }
 .signup__body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 9.8rem 6.4rem;
+  align-items: flex-start;
+  padding-left: 6.4rem;
 }
 @media only screen and (max-width: 56.25em) {
   .signup__body {
     order: 2;
-    padding: 4rem 2.4rem;
-    align-items: flex-start;
+    padding: 0rem 2.4rem 4rem;
   }
 }
 .signup__body__heading {
-  margin-bottom: 2.4rem;
+  margin: 9.7rem 0 2.4rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .signup__body__heading {
+    margin-bottom: 2.4rem;
+    margin-top: 0;
+  }
 }
 .signup__body__hero {
   margin-bottom: 2.4rem;
@@ -225,7 +230,7 @@ body {
   list-style-type: none;
   padding-left: 0;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem 0;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -252,7 +257,6 @@ body {
 .signup__body__form__email {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.8rem;
 }
 .signup__body__form__email__container {
   display: flex;
@@ -279,11 +283,13 @@ body {
   height: 100%;
   object-fit: contain;
   border-radius: 16px;
+  padding: 2.4rem 2.4rem 2.4rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .signup__img {
     order: 1;
     border-radius: 0;
+    padding: 0;
   }
 }
 
